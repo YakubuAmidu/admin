@@ -1,6 +1,6 @@
 import React from 'react';
 import './FeaturedInfo.css';
-import { ArrowDownward } from '@material-ui/icons';
+import { ArrowDownward, ArrowUpward } from '@material-ui/icons';
 
 export default function FeaturedInfo(){
  return (
@@ -9,7 +9,25 @@ export default function FeaturedInfo(){
              <span className="featuredTitle">Revenue</span>
              <div className="featuredMoneyContainer">
                  <span className="featuredMoney">$2,145</span>
-                 <span className="featuredRate">-11.45 <ArrowDownward /></span>
+                 <span className="featuredRate">- 11.45 <ArrowDownward /></span>
+             </div>
+             <span className="featuredSub">Compared to last month</span>
+         </div>
+
+         <div className="featuredItem">
+             <span className="featuredTitle">Sales</span>
+             <div className="featuredMoneyContainer">
+                 <span className="featuredMoney">$4,145</span>
+                 <span className="featuredRate">- 2.45 <ArrowDownward /></span>
+             </div>
+             <span className="featuredSub">Compared to last month</span>
+         </div>
+
+         <div className="featuredItem">
+             <span className="featuredTitle">Cost</span>
+             <div className="featuredMoneyContainer">
+                 <span className="featuredMoney">$4,145</span>
+                 <span className="featuredRate">+ 2.45 <ArrowUpward /></span>
              </div>
              <span className="featuredSub">Compared to last month</span>
          </div>
