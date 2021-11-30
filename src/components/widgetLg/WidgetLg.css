@@ -9,3 +9,10 @@
     font-size: 22px;
     font-weight: 600;
 }
+
+.widgetLgImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}

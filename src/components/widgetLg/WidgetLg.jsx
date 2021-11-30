@@ -32,6 +32,45 @@ export default function WidgetLg(){
                      <Button type="Approved" />
                  </td>
              </tr>
+
+             <tr className="widgetLgTr">
+                 <td className="widgetLgUser">
+                 <img src={user1} alt="User" className="widgetLgImg" />
+                 <span className="widgetLgName">Susan Carol</span>
+                 </td>
+
+                 <td className="widgetLgDate">2 June 2021</td>
+                 <td className="widgetLgAmount">$ 3,444</td>
+                 <td className="widgetLgStatus">
+                     <Button type="Declined" />
+                 </td>
+             </tr>
+
+             <tr className="widgetLgTr">
+                 <td className="widgetLgUser">
+                 <img src={user1} alt="User" className="widgetLgImg" />
+                 <span className="widgetLgName">Susan Carol</span>
+                 </td>
+
+                 <td className="widgetLgDate">2 June 2021</td>
+                 <td className="widgetLgAmount">$ 3,444</td>
+                 <td className="widgetLgStatus">
+                     <Button type="Pending" />
+                 </td>
+             </tr>
+
+             <tr className="widgetLgTr">
+                 <td className="widgetLgUser">
+                 <img src={user1} alt="User" className="widgetLgImg" />
+                 <span className="widgetLgName">Susan Carol</span>
+                 </td>
+
+                 <td className="widgetLgDate">2 June 2021</td>
+                 <td className="widgetLgAmount">$ 3,444</td>
+                 <td className="widgetLgStatus">
+                     <Button type="Approved" />
+                 </td>
+             </tr>
          </table>
         </div>
     )
