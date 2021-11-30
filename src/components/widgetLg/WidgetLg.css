@@ -4,3 +4,8 @@
     box-shadow: -2px -2px 15px 1px #000000;
     padding: 20px;
 }
+
+.widgetLgTitle{
+    font-size: 22px;
+    font-weight: 600;
+}
