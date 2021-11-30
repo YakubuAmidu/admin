@@ -12,10 +12,10 @@ export default function WidgetSm(){
                     <img src={profile1} alt="profile-1" className="widgetSmImg" />
                     <div className="widgetSmUser">
                         <span className="widgetSmUsername">John Smith</span>
-                        <span className="widgetSmTitle">Software Engineer</span>
+                        <span className="widgetSmUserTitle">Software Engineer</span>
                     </div>
                     <button className="widgetSmButton">
-                      <Visibility />
+                      <Visibility className="widgeSmIcon"/>
                        Display
                     </button>
                 </li>
@@ -24,10 +24,10 @@ export default function WidgetSm(){
                     <img src={profile1} alt="profile-1" className="widgetSmImg" />
                     <div className="widgetSmUser">
                         <span className="widgetSmUsername">John Smith</span>
-                        <span className="widgetSmTitle">Software Engineer</span>
+                        <span className="widgetSmUserTitle">Software Engineer</span>
                     </div>
                     <button className="widgetSmButton">
-                      <Visibility />
+                      <Visibility className="widgeSmIcon"/>
                        Display
                     </button>
                 </li>
@@ -36,10 +36,10 @@ export default function WidgetSm(){
                     <img src={profile1} alt="profile-1" className="widgetSmImg" />
                     <div className="widgetSmUser">
                         <span className="widgetSmUsername">John Smith</span>
-                        <span className="widgetSmTitle">Software Engineer</span>
+                        <span className="widgetSmUserTitle">Software Engineer</span>
                     </div>
                     <button className="widgetSmButton">
-                      <Visibility />
+                      <Visibility className="widgeSmIcon"/>
                        Display
                     </button>
                 </li>
@@ -48,10 +48,10 @@ export default function WidgetSm(){
                     <img src={profile1} alt="profile-1" className="widgetSmImg" />
                     <div className="widgetSmUser">
                         <span className="widgetSmUsername">John Smith</span>
-                        <span className="widgetSmTitle">Software Engineer</span>
+                        <span className="widgetSmUserTitle">Software Engineer</span>
                     </div>
                     <button className="widgetSmButton">
-                      <Visibility />
+                      <Visibility className="widgeSmIcon"/>
                        Display
                     </button>
                 </li>
@@ -60,10 +60,10 @@ export default function WidgetSm(){
                     <img src={profile1} alt="profile-1" className="widgetSmImg" />
                     <div className="widgetSmUser">
                         <span className="widgetSmUsername">John Smith</span>
-                        <span className="widgetSmTitle">Software Engineer</span>
+                        <span className="widgetSmUserTitle">Software Engineer</span>
                     </div>
                     <button className="widgetSmButton">
-                      <Visibility />
+                      <Visibility className="widgeSmIcon"/>
                        Display
                     </button>
                 </li>
