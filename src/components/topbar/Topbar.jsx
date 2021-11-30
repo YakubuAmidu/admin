@@ -1,6 +1,6 @@
 import React from 'react';
 import './Topbar.css';
-import profile from '../img/profile.png';
+import profile from '../../img/profile.png';
 import  { NotificationsNone, Language, Settings } from '@material-ui/icons';
 
 export default function Topbar(){
