@@ -1,6 +1,12 @@
 import React from 'react';
 import './sidebar.css';
-import { LineStyle, Timeline, TrendingUp} from '@material-ui/icons';
+import { 
+    LineStyle, Timeline, TrendingUp, 
+    PersonOutline, AttachMoney, BarChart, 
+    MailOutline, DynamicFeed,
+    WorkOutline,
+    Report
+} from '@material-ui/icons';
 
 export default function sidebar(){
     return (
@@ -34,18 +40,23 @@ export default function sidebar(){
                     </h3>
                     <ul className="sidebarList">
                         <li className="sidebarListItem active">
-                            <LineStyle className="sidebarIcon"/>
-                            Home
+                            <PersonOutline className="sidebarIcon"/>
+                            Users
                         </li>
 
                         <li className="sidebarListItem">
-                            <Timeline className="sidebarIcon"/>
-                            Analytics
+                            <PersonOutline className="sidebarIcon"/>
+                            products
                         </li>
 
                         <li className="sidebarListItem">
-                            <TrendingUp className="sidebarIcon"/>
-                            Sales
+                            <AttachMoney className="sidebarIcon"/>
+                            Transactions
+                        </li>
+
+                        <li className="sidebarListItem">
+                            <BarChart className="sidebarIcon"/>
+                            Reports
                         </li>
                     </ul>
                 </div>
@@ -56,18 +67,18 @@ export default function sidebar(){
                     </h3>
                     <ul className="sidebarList">
                         <li className="sidebarListItem active">
-                            <LineStyle className="sidebarIcon"/>
-                            Home
+                            <MailOutline className="sidebarIcon"/>
+                            Mail
                         </li>
 
                         <li className="sidebarListItem">
-                            <Timeline className="sidebarIcon"/>
-                            Analytics
+                            <DynamicFeed className="sidebarIcon"/>
+                            Feed back
                         </li>
 
                         <li className="sidebarListItem">
-                            <TrendingUp className="sidebarIcon"/>
-                            Sales
+                            <MailOutline className="sidebarIcon"/>
+                            Messages
                         </li>
                     </ul>
                 </div>
@@ -78,8 +89,8 @@ export default function sidebar(){
                     </h3>
                     <ul className="sidebarList">
                         <li className="sidebarListItem active">
-                            <LineStyle className="sidebarIcon"/>
-                            Home
+                            <WorkOutline className="sidebarIcon"/>
+                            Manage
                         </li>
 
                         <li className="sidebarListItem">
@@ -88,8 +99,8 @@ export default function sidebar(){
                         </li>
 
                         <li className="sidebarListItem">
-                            <TrendingUp className="sidebarIcon"/>
-                            Sales
+                            <Report className="sidebarIcon"/>
+                            Reports
                         </li>
                     </ul>
                 </div>
