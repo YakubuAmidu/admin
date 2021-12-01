@@ -1,6 +1,7 @@
 import React from 'react';
 import './User.css';
 import UserShow1 from '../../img/UserShowImg1.png';
+import { PermIdentity } from '@material-ui/icons';
 
 export default function User(){
     return (
@@ -20,7 +21,31 @@ export default function User(){
                          </div>
                     </div>
                     <div className="userShowBottom">
+                      <span className="userShowTitle">Account details</span>
+                      <div className="userShowInfo">
+                          <PermIdentity className="userShowIcon" alt="icon" />
+                          <div className="userShowInfoTitle">Annabeck99</div>
+                      </div>
 
+                      <div className="userShowInfo">
+                          <PermIdentity className="userShowIcon" alt="icon" />
+                          <div className="userShowInfoTitle">10.12.1999</div>
+                      </div>
+
+                      <div className="userShowInfo">
+                          <PermIdentity className="userShowIcon" alt="icon" />
+                          <div className="userShowInfoTitle">+1 234 567 895</div>
+                      </div>
+
+                      <div className="userShowInfo">
+                          <PermIdentity className="userShowIcon" alt="icon" />
+                          <div className="userShowInfoTitle">Annabeck99@gmail.com</div>
+                      </div>
+
+                      <div className="userShowInfo">
+                          <PermIdentity className="userShowIcon" alt="icon" />
+                          <div className="userShowInfoTitle">New York | USA</div>
+                      </div>
                     </div>
                 </div>
                 <div className="userUpdate">Usder Update</div>
