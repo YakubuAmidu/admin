@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './UserList.css';
 //import avatar from '../../img/userlist1.png';
 import { DataGrid } from '@mui/x-data-grid';
@@ -7,6 +7,13 @@ import { UserRows } from '../../dummyData';
 import { Link } from 'react-router-dom';
 
 export default function UserList(){
+    const [data, setData] = useState(UserRows);
+
+    const handleDelete = (id) => {
+       setData(data.filter((item) => 
+           item.id !== id ));
+    }
+
     const columns = [
         { field: 'id', headerName: 'ID', width: 90 },
         { field: 'user', headerName: 'User', width: 200, renderCell: (params) => {
@@ -38,7 +45,7 @@ export default function UserList(){
                     <Link to={'/users ' + params.row.id}>
                     <button className="deleteListEdit">Edit</button>
                     </Link>
-                    <DeleteOutline className="userListDelete"/>
+                    <DeleteOutline className="userListDelete" onClick={() => handleDelete(params.row.id)}/>
                     </>
                 )
             }
@@ -48,7 +55,7 @@ export default function UserList(){
     return (
         <div className="userList">
        <DataGrid
-        rows={UserRows}
+        rows={data}
         columns={columns}
         disableSelectionOnClick
         pageSize={8}
