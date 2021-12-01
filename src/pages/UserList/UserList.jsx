@@ -1,6 +1,6 @@
 import React from 'react';
 import './UserList.css';
-//import Userlist1 from '../../img/userlist1.png';
+import UserList1 from '../../img/userlist1.png';
 import { DataGrid } from '@mui/x-data-grid';
 
 export default function UserList(){
@@ -9,7 +9,7 @@ export default function UserList(){
         { field: 'user', headerName: 'User', width: 200, renderCell: (params) => {
             return (
                 <div className="userListUser">
-                 <img src={params.row.avatar} alt="avatar" />
+                 <img className="userListImg" src={params.row.avatar} alt="" />
                  {params.row.username}
                 </div>
             )
@@ -31,7 +31,7 @@ export default function UserList(){
         { 
             id: 1, 
             username: 'Jon Snow', 
-            avatar: "../../img/userlist1.png", 
+            avatar: {UserList1}, 
             email: "Jon@gmail.com", 
             status: "Active", 
             transaction: "$120.00" 
