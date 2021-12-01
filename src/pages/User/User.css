@@ -8,3 +8,33 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.userAddButton {
+    width: 80px;
+    border: none;
+    padding: 5px;
+    background-color: teal;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.userContainer{
+    display: flex;
+    margin-top: 20px;
+}
+
+.userShow{
+   flex: 1;
+   padding: 20px;
+   -webkit-box-shadow: -2px -2px 15px 1px #000000; 
+   box-shadow: -2px -2px 15px 1px #000000;
+}
+
+.userUpdate{
+    flex: 2;
+    padding: 20px;
+    margin-left: 20px;
+    -webkit-box-shadow: -2px -2px 15px 1px #000000; 
+    box-shadow: -2px -2px 15px 1px #000000;
+}
