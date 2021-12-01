@@ -1,7 +1,13 @@
 import React from 'react';
 import './User.css';
 import UserShow1 from '../../img/UserShowImg1.png';
-import { PermIdentity } from '@material-ui/icons';
+import { 
+    CalendarToday, 
+    LocationSearching,
+     MailOutline, 
+     PermIdentity, 
+     PhoneAndroid 
+    } from '@material-ui/icons';
 
 export default function User(){
     return (
@@ -28,22 +34,24 @@ export default function User(){
                       </div>
 
                       <div className="userShowInfo">
-                          <PermIdentity className="userShowIcon" alt="icon" />
+                          <CalendarToday className="userShowIcon" alt="icon" />
                           <div className="userShowInfoTitle">10.12.1999</div>
                       </div>
 
+                      <span className="userShowTitle">Contact details</span>
+
                       <div className="userShowInfo">
-                          <PermIdentity className="userShowIcon" alt="icon" />
+                          <PhoneAndroid className="userShowIcon" alt="icon" />
                           <div className="userShowInfoTitle">+1 234 567 895</div>
                       </div>
 
                       <div className="userShowInfo">
-                          <PermIdentity className="userShowIcon" alt="icon" />
+                          <MailOutline className="userShowIcon" alt="icon" />
                           <div className="userShowInfoTitle">Annabeck99@gmail.com</div>
                       </div>
 
                       <div className="userShowInfo">
-                          <PermIdentity className="userShowIcon" alt="icon" />
+                          <LocationSearching className="userShowIcon" alt="icon" />
                           <div className="userShowInfoTitle">New York | USA</div>
                       </div>
                     </div>
