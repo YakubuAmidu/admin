@@ -1,8 +1,10 @@
 import React from 'react';
 import './UserList.css';
-import avatar from '../../img/userlist1.png';
+//import avatar from '../../img/userlist1.png';
 import { DataGrid } from '@mui/x-data-grid';
 import { DeleteOutline } from '@material-ui/icons';
+import { UserRows } from '../../dummyData';
+import { Link } from 'react-router-dom';
 
 export default function UserList(){
     const columns = [
@@ -33,7 +35,9 @@ export default function UserList(){
             renderCell: (params) => {
                 return (
                     <>
+                    <Link to={'/users ' + params.row.id}>
                     <button className="deleteListEdit">Edit</button>
+                    </Link>
                     <DeleteOutline className="userListDelete"/>
                     </>
                 )
@@ -41,106 +45,13 @@ export default function UserList(){
         }
       ];
 
-      const rows = [
-        { 
-            id: 1, 
-            username: 'Jon Snow', 
-            avatar: {avatar},
-            email: "Jon@gmail.com", 
-            status: "Active", 
-            transaction: "$120.00" 
-        },
-
-        { 
-            id: 2, 
-            username: 'Jon Snow', 
-            avatar: {avatar}, 
-            email: "Jon@gmail.com", 
-            status: "Active", 
-            transaction: "$120.00" 
-        },
-
-        { 
-            id: 3, 
-            username: 'Jon Snow', 
-            avatar: {avatar}, 
-            email: "Jon@gmail.com", 
-            status: "Active", 
-            transaction: "$120.00" 
-        },
-
-        { 
-            id: 4, 
-            username: 'Jon Snow', 
-            avatar: {avatar}, 
-            email: "Jon@gmail.com", 
-            status: "Active", 
-            transaction: "$120.00" 
-        },
-
-        { 
-            id: 5, 
-            username: 'Jon Snow', 
-            avatar: {avatar}, 
-            email: "Jon@gmail.com", 
-            status: "Active", 
-            transaction: "$120.00" 
-        },
-
-        { 
-            id: 6, 
-            username: 'Jon Snow', 
-            avatar: {avatar}, 
-            email: "Jon@gmail.com", 
-            status: "Active", 
-            transaction: "$120.00" 
-        },
-
-        { 
-            id: 7, 
-            username: 'Jon Snow', 
-            avatar: {avatar}, 
-            email: "Jon@gmail.com", 
-            status: "Active", 
-            transaction: "$120.00" 
-        },
-
-        { 
-            id: 8, 
-            username: 'Jon Snow', 
-            avatar: {avatar}, 
-            email: "Jon@gmail.com", 
-            status: "Active", 
-            transaction: "$120.00" 
-        },
-
-        { 
-            id: 9, 
-            username: 'Jon Snow', 
-            avatar: {avatar}, 
-            email: "Jon@gmail.com", 
-            status: "Active", 
-            transaction: "$120.00" 
-        },
-
-        { 
-            id: 10, 
-            username: 'Jon Snow', 
-            avatar: {avatar}, 
-            email: "Jon@gmail.com", 
-            status: "Active", 
-            transaction: "$120.00" 
-        },
-      ];
-      
-
     return (
         <div className="userList">
        <DataGrid
-        rows={rows}
+        rows={UserRows}
         columns={columns}
         disableSelectionOnClick
-        pageSize={5}
+        pageSize={8}
         rowsPerPageOptions={[5]}
         checkboxSelection
       />
