@@ -1,7 +1,8 @@
 import React from 'react';
 import './UserList.css';
-import UserList1 from '../../img/userlist1.png';
+import avatar from '../../img/userlist1.png';
 import { DataGrid } from '@mui/x-data-grid';
+import { DeleteOutline } from '@material-ui/icons';
 
 export default function UserList(){
     const columns = [
@@ -24,6 +25,19 @@ export default function UserList(){
             field: 'transaction',
             headerName: 'Transaction Volumne',
             width: 160
+        },
+        {
+            field: 'action',
+            headerName: 'Action',
+            width: 150,
+            renderCell: (params) => {
+                return (
+                    <>
+                    <button className="deleteListEdit">Edit</button>
+                    <DeleteOutline className="userListDelete"/>
+                    </>
+                )
+            }
         }
       ];
 
@@ -31,7 +45,7 @@ export default function UserList(){
         { 
             id: 1, 
             username: 'Jon Snow', 
-            avatar: {UserList1}, 
+            avatar: {avatar},
             email: "Jon@gmail.com", 
             status: "Active", 
             transaction: "$120.00" 
@@ -40,7 +54,7 @@ export default function UserList(){
         { 
             id: 2, 
             username: 'Jon Snow', 
-            avatar: "../../img/userlist1.png", 
+            avatar: {avatar}, 
             email: "Jon@gmail.com", 
             status: "Active", 
             transaction: "$120.00" 
@@ -49,7 +63,7 @@ export default function UserList(){
         { 
             id: 3, 
             username: 'Jon Snow', 
-            avatar: "../../img/userlist1.png", 
+            avatar: {avatar}, 
             email: "Jon@gmail.com", 
             status: "Active", 
             transaction: "$120.00" 
@@ -58,7 +72,7 @@ export default function UserList(){
         { 
             id: 4, 
             username: 'Jon Snow', 
-            avatar: "../../img/userlist1.png", 
+            avatar: {avatar}, 
             email: "Jon@gmail.com", 
             status: "Active", 
             transaction: "$120.00" 
@@ -67,7 +81,7 @@ export default function UserList(){
         { 
             id: 5, 
             username: 'Jon Snow', 
-            avatar: "../../img/userlist1.png", 
+            avatar: {avatar}, 
             email: "Jon@gmail.com", 
             status: "Active", 
             transaction: "$120.00" 
@@ -76,7 +90,7 @@ export default function UserList(){
         { 
             id: 6, 
             username: 'Jon Snow', 
-            avatar: "../../img/userlist1.png", 
+            avatar: {avatar}, 
             email: "Jon@gmail.com", 
             status: "Active", 
             transaction: "$120.00" 
@@ -85,7 +99,7 @@ export default function UserList(){
         { 
             id: 7, 
             username: 'Jon Snow', 
-            avatar: "../../img/userlist1.png", 
+            avatar: {avatar}, 
             email: "Jon@gmail.com", 
             status: "Active", 
             transaction: "$120.00" 
@@ -94,7 +108,7 @@ export default function UserList(){
         { 
             id: 8, 
             username: 'Jon Snow', 
-            avatar: "../../img/userlist1.png", 
+            avatar: {avatar}, 
             email: "Jon@gmail.com", 
             status: "Active", 
             transaction: "$120.00" 
@@ -103,7 +117,7 @@ export default function UserList(){
         { 
             id: 9, 
             username: 'Jon Snow', 
-            avatar: "../../img/userlist1.png", 
+            avatar: {avatar}, 
             email: "Jon@gmail.com", 
             status: "Active", 
             transaction: "$120.00" 
@@ -112,7 +126,7 @@ export default function UserList(){
         { 
             id: 10, 
             username: 'Jon Snow', 
-            avatar: "../../img/userlist1.png", 
+            avatar: {avatar}, 
             email: "Jon@gmail.com", 
             status: "Active", 
             transaction: "$120.00" 
@@ -125,6 +139,7 @@ export default function UserList(){
        <DataGrid
         rows={rows}
         columns={columns}
+        disableSelectionOnClick
         pageSize={5}
         rowsPerPageOptions={[5]}
         checkboxSelection
