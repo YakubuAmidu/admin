@@ -4,7 +4,7 @@ import './NewUser.css';
 export default function NewUser(){
     return (
         <div className="newUser">
-            <h1 className="newUserTitle">new User</h1>
+            <h1 className="newUserTitle">New User</h1>
             <form className="newUserForm">
                 <div className="newUserItem">
                     <label>Username</label>
@@ -42,8 +42,8 @@ export default function NewUser(){
                 </div>
 
                 <div className="newUserItem">
+                <label>Gender</label>
                  <div className="newUserGender">
-                  <label>Gender</label>
                   <input type="radio" name="gender" id="male" value="male" className="newUserInput" />
                   <label for="male">Male</label>
                  <input type="radio" name="gender" id="female" value="female" className="newUserInput" />
@@ -60,6 +60,7 @@ export default function NewUser(){
                      <option value="no">No</option>
                     </select>
                 </div>
+                <button className="newUserButton">Create</button>
             </form>
         </div>
     );
