@@ -6,6 +6,7 @@ import Home from './pages/home/Home';
 import UserList from './pages/UserList/UserList';
 import User from './pages/User/User';
 import NewUser from './pages/NewUser/NewUser';
+import ProductList from './pages/ProductList/ProductList';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
          <Route exact path="/users" element={<UserList />} />
          <Route exact path="/user/:userId" element={<User />} />
          <Route exact path="/newUser" element={<NewUser />} />
+         <Route exact path="/products" element={<ProductList />} />
+         <Route exact path="/product/:productsId" element={<User />} />
+         <Route exact path="/newProduct" element={<User />} />
        </Routes>
       </div>
     </Router>

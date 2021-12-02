@@ -5,8 +5,9 @@ import {
     PersonOutline, AttachMoney, BarChart, 
     MailOutline, DynamicFeed,
     WorkOutline,
-    Report
+    Report,
 } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 
 export default function sidebar(){
     return (
@@ -39,15 +40,19 @@ export default function sidebar(){
                         Quick Menu
                     </h3>
                     <ul className="sidebarList">
+                      <Link to="/users" className="link">
                         <li className="sidebarListItem">
                             <PersonOutline className="sidebarIcon"/>
                             Users
                         </li>
-
+                        </Link>
+                        
+                        <Link to="/products" className="link">
                         <li className="sidebarListItem">
                             <PersonOutline className="sidebarIcon"/>
                             products
                         </li>
+                        </Link>
 
                         <li className="sidebarListItem">
                             <AttachMoney className="sidebarIcon"/>
