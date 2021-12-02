@@ -1,9 +1,11 @@
 import React from 'react';
 import './Product.css';
-import productInfoImg1 from '../../img/productInfoImg1.png';
 import { Link } from 'react-router-dom';
 import Chart from '../../components/chart/chart';
 import { ProductData } from '../../dummyData';
+import productUploadInfoImg1 from '../../img/userUpdate.png';
+import productUploadImg from '../../img/userUpdate.png';
+import { Publish } from '@material-ui/icons';
 
 export default function Product(){
   return (
@@ -22,7 +24,7 @@ export default function Product(){
 
         <div className="productTopRight">
           <div className="productInfoTop">
-           <im src={productInfoImg1} alt="" className="productInfoImg" />
+           <im src={productUploadInfoImg1} alt="" className="productInfoImg" />
            <span className="productName">Apple Airpod</span>
           </div>
           <div className="productInfoBottom">
@@ -50,7 +52,34 @@ export default function Product(){
       </div>
 
       <div className="productButton">
+         <form className="productForm">
+           <div className="productFormLeft">
+             <label>Product Name</label>
+             <input type="text" placeholder="Apple Airpods" className="productInput" />
+             <label>In stock</label>
+             <select name="inStock" id="inStock">
+               <option value="yes">Yes</option>
+               <option value="no">No</option>
+             </select>
 
+             <label>Active</label>
+             <select name="active" id="active">
+               <option value="yes">Yes</option>
+               <option value="no">No</option>
+             </select>
+           </div>
+
+           <div className="productFormRight">
+             <div className="productUpload">
+               <img src={productUploadImg} alt="" className="productUploadImg" />
+               <label for="file">
+                 <Publish />
+               </label>
+               <input type="file" id="file" style={{ display: 'none' }} />
+             </div>
+             <button className="productButton">Update</button>
+             </div>
+         </form>
       </div>
   </div>
   )
