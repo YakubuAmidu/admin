@@ -9,8 +9,8 @@ export default function ProductList(){
     const [data, setData] = useState(ProductRows);
 
     const handleDelete = (id) => {
-        setData(data.filter((item) => 
-            item.id !== id ));
+       setData(data.filter((item) => 
+           item.id !== id ));
     }
 
     const columns = [
@@ -21,8 +21,8 @@ export default function ProductList(){
            width: 200, 
            renderCell: (params) => {
             return (
-                <div className="productListItem">
-                 <img className="productListImg" src={params.row.img} alt="" />
+                <div className="ProductListItem">
+                 <img className="ProductListImg" src={params.row.img} alt="" />
                  {params.row.name}
                 </div>
             )
@@ -45,7 +45,7 @@ export default function ProductList(){
             renderCell: (params) => {
                 return (
                     <>
-                    <Link to={'/product/ ' + params.row.id}>
+                    <Link to={'/product/:productId ' + params.row.id}>
                     <button className="productListEdit">Edit</button>
                     </Link>
                     <DeleteOutline className="productListDelete" onClick={() => handleDelete(params.row.id)}/>
@@ -55,17 +55,16 @@ export default function ProductList(){
         }
       ];
 
-
     return (
         <div className="productList">
-            <DataGrid
-        rows={data}
-        columns={columns}
-        disableSelectionOnClick
-        pageSize={10}
-        rowsPerPageOptions={[5]}
-        checkboxSelection
-      />
-        </div>
+        <DataGrid
+         rows={data}
+         columns={columns}
+         disableSelectionOnClick
+         pageSize={10}
+         rowsPerPageOptions={[5]}
+         checkboxSelection
+       />
+         </div>
     )
 }

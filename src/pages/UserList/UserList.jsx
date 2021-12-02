@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './UserList.css';
-//import avatar from '../../img/userlist1.png';
 import { DataGrid } from '@mui/x-data-grid';
 import { DeleteOutline } from '@material-ui/icons';
 import { UserRows } from '../../dummyData';
@@ -23,6 +22,7 @@ export default function UserList(){
                  {params.row.username}
                 </div>
             )
+            
         } },
         { field: 'email', headerName: 'Email', width: 200 },
         {
