@@ -51,7 +51,7 @@ export default function Product(){
         </div>
       </div>
 
-      <div className="productButton">
+      <div className="productButtom">
          <form className="productForm">
            <div className="productFormLeft">
              <label>Product Name</label>
