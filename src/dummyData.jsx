@@ -1,6 +1,3 @@
-import productImg from './img/userUpdate.png';
-import avatar from './img/userlist1.png';
-
 export const userData = [
     {
       name: 'Jan',
@@ -71,7 +68,7 @@ export const userData = [
     { 
         id: 1, 
         username: 'Jon Snow', 
-        avatar: {avatar},
+        avatar: require('./img/userlist1.png'),
         email: "Jon@gmail.com", 
         status: "Active", 
         transaction: "$120.00" 
@@ -80,7 +77,7 @@ export const userData = [
     { 
         id: 2, 
         username: 'Jon Snow', 
-        avatar: {avatar}, 
+        avatar: require('./img/userlist1.png'), 
         email: "Jon@gmail.com", 
         status: "Active", 
         transaction: "$120.00" 
@@ -89,7 +86,7 @@ export const userData = [
     { 
         id: 3, 
         username: 'Jon Snow', 
-        avatar: {avatar},
+        avatar: require('./img/userlist1.png'),
         email: "Jon@gmail.com", 
         status: "Active", 
         transaction: "$120.00" 
@@ -98,7 +95,7 @@ export const userData = [
     { 
         id: 4, 
         username: 'Jon Snow', 
-        avatar: {avatar}, 
+        avatar: require('./img/userlist1.png'), 
         email: "Jon@gmail.com", 
         status: "Active", 
         transaction: "$120.00" 
@@ -107,7 +104,7 @@ export const userData = [
     { 
         id: 5, 
         username: 'Jon Snow', 
-        avatar: {avatar},
+        avatar: require('./img/userlist1.png'),
         email: "Jon@gmail.com", 
         status: "Active", 
         transaction: "$120.00" 
@@ -116,7 +113,7 @@ export const userData = [
     { 
         id: 6, 
         username: 'Jon Snow', 
-        avatar: {avatar},
+        avatar: require('./img/userlist1.png'),
         email: "Jon@gmail.com", 
         status: "Active", 
         transaction: "$120.00" 
@@ -125,7 +122,7 @@ export const userData = [
     { 
         id: 7, 
         username: 'Jon Snow', 
-        avatar: {avatar}, 
+        avatar: require('./img/userlist1.png'), 
         email: "Jon@gmail.com", 
         status: "Active", 
         transaction: "$120.00" 
@@ -134,7 +131,7 @@ export const userData = [
     { 
         id: 8, 
         username: 'Jon Snow', 
-        avatar: {avatar},
+        avatar: require('./img/userlist1.png'),
         email: "Jon@gmail.com", 
         status: "Active", 
         transaction: "$120.00" 
@@ -143,7 +140,7 @@ export const userData = [
     { 
         id: 9, 
         username: 'Jon Snow', 
-        avatar: {avatar}, 
+        avatar: require('./img/userlist1.png'), 
         email: "Jon@gmail.com", 
         status: "Active", 
         transaction: "$120.00" 
@@ -152,7 +149,7 @@ export const userData = [
     { 
         id: 10, 
         username: 'Jon Snow', 
-        avatar: {avatar},
+        avatar: require('./img/userlist1.png'),
         email: "Jon@gmail.com", 
         status: "Active", 
         transaction: "$120.00" 
@@ -163,7 +160,7 @@ export const userData = [
     { 
         id: 1, 
         name: 'Apple airpods', 
-        img: {productImg},
+        img: require('./img/productInfoImg1.png'),
         stock: 123, 
         status: "Active", 
         price: "$120.00" 
@@ -172,7 +169,7 @@ export const userData = [
     { 
         id: 2, 
         name: 'Apple airpods', 
-        img: {productImg}, 
+        img: require('./img/productInfoImg1.png'), 
         stock: 123, 
         status: "Active", 
         price: "$120.00" 
@@ -181,7 +178,7 @@ export const userData = [
     { 
         id: 3, 
         name: 'Apple airpods', 
-        img: {productImg},
+        img: require('./img/productInfoImg1.png'),
         stock: 123, 
         status: "Active", 
         price: "$120.00" 
@@ -190,7 +187,7 @@ export const userData = [
     { 
         id: 4, 
         name: 'Apple airpods', 
-        img: {productImg}, 
+        img: require('./img/productInfoImg1.png'), 
         stock: 123, 
         status: "Active", 
         price: "$120.00" 
@@ -199,7 +196,7 @@ export const userData = [
     { 
         id: 5, 
         name: 'Apple airpods', 
-        img: {productImg},
+        img: require('./img/productInfoImg1.png'),
         stock: 123, 
         status: "Active", 
         price: "$120.00" 
@@ -208,7 +205,7 @@ export const userData = [
     { 
         id: 6, 
         name: 'Apple airpods', 
-        img: {productImg},
+        img: require('./img/productInfoImg1.png'),
         stock: 123, 
         status: "Active", 
         price: "$120.00" 
@@ -217,7 +214,7 @@ export const userData = [
     { 
         id: 7, 
         name: 'Apple airpods', 
-        img: {productImg}, 
+        img: require('./img/productInfoImg1.png'), 
         stock: 123, 
         status: "Active", 
         price: "$120.00" 
@@ -226,7 +223,7 @@ export const userData = [
     { 
         id: 8, 
         name: 'Apple airpods', 
-        img: {productImg},
+        img: require('./img/productInfoImg1.png'),
         stock: 123, 
         status: "Active", 
         price: "$120.00" 
@@ -235,7 +232,7 @@ export const userData = [
     { 
         id: 9, 
         name: 'Apple airpods', 
-        img: {productImg}, 
+        img: require('./img/productInfoImg1.png'), 
         stock: 123, 
         status: "Active", 
         price: "$120.00" 
@@ -244,7 +241,7 @@ export const userData = [
     { 
         id: 10, 
         name: 'Apple airpods', 
-        img: {productImg},
+        img: require('./img/productInfoImg1.png'),
         stock: 123, 
         status: "Active", 
         price: "$120.00" 
